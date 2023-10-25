@@ -4,6 +4,7 @@
     <title>Hannah Y</title>
     <meta charset="utf-8">
     <meta name="author" content="Hannah Yehudah">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
 
     <style>
       body {
@@ -12,7 +13,20 @@
       }
 
       body {
-        background-color: #0b321aff;
+        background-color: #4c1a57ff;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
       }
     </style>
     
@@ -22,7 +36,7 @@
         height: 128px;
         object-fit: cover;
         border-radius: 128px;
-        border: thick double #c1dbe3ff;
+        border: thick double #e1f7b6ff;
       }
       
       .thumbnail {
@@ -30,11 +44,18 @@
         height: 48px;
         border-radius: 48px;
         object-fit: cover;
-        border: thick double #0b321aff;
+        border: solid #0b321aff;
       }
 
       .name {
-        color: #c1dbe3ff;
+        color: #e1f7b6ff;
+        display: flex;
+        justify-content: center;
+      }
+
+      .social_icons {
+        display: flex;
+        justify-content: space-around;
       }
 
       .social_icons a {
@@ -43,18 +64,35 @@
       }
 
       .link {
-        background-color: #c1dbe3ff;
+        background-color: skyblue;
+        display: flex;
+        align-items: center;
+        padding: 7px;
       }
 
       .link a {
         color: #0f1a0fff;
         text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 760px;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
       }
     </style>
 
   </head>
 
-  <bod>
+  <body>
     <div class="items">
       <div class="banner">
         <img src="/thumbnails/headshot_disco.jpeg" alt="Hannah Yehudah's headshot" class="banner-image">
@@ -66,19 +104,19 @@
 
       <div class="social_icons">
         <a href="https://github.com/itsabouttom" target="_blank">
-          GitHub
+          <i class="fa-brands fa-github fa-2xl" style="color: #e1f784;"></i>
         </a>
 
         <a href="https://www.instagram.com/hannahwithawhy/" target="_blank">
-          Instagram
+          <i class="fa-brands fa-instagram fa-2xl" style="color: #e1f7b6;"></i>
         </a>
 
         <a href="https://madebyhannahy.com/" target="_blank">
-          Portfolio
+          <i class="fa-solid fa-user fa-2xl" style="color: #e1f7b6;"></i>
         </a>
 
         <a href="www.linkedin.com/in/hannahyehudah" target="_blank">
-          LinkedIn
+          <i class="fa-brands fa-linkedin fa-2xl" style="color: #e1f7b6;"></i>
         </a>
       </div>
 
